@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import MagneticButton from './UI/MagneticButton';
 import ScrollProgress from './UI/ScrollProgress';
 
@@ -71,24 +71,7 @@ const Navbar = () => {
                             </MagneticButton>
                         ))}
 
-                        <MagneticButton>
-                            <a
-                                href="/resume.pdf"
-                                target="_blank"
-                                style={{
-                                    padding: '0.6rem 1.2rem',
-                                    background: 'var(--text-primary)',
-                                    color: 'var(--bg-primary)',
-                                    borderRadius: '50px',
-                                    fontSize: '0.9rem',
-                                    fontWeight: 600,
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '0.5rem'
-                                }}>
-                                Resume <Download size={16} />
-                            </a>
-                        </MagneticButton>
+
                     </div>
 
                     {/* Mobile Toggle */}
